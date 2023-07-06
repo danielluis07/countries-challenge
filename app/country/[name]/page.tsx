@@ -59,7 +59,7 @@ const Page = ({ params: { name } }: Params) => {
       .catch(function (error) {
         console.log(error);
       });
-  }, []);
+  }, [name]);
 
   console.log(data);
 
