@@ -176,11 +176,11 @@ const Page = ({ params: { name } }: Params) => {
                           : "flex gap-4"
                       } mt-8`}>
                       {country.borders!.map((countries) => (
-                        <Link href={`/country/${countries}`}>
-                          <div key={countries}>
+                        <div key={countries}>
+                          <Link href={`/country/${countries}`}>
                             <BordersBox name={countries} />
-                          </div>
-                        </Link>
+                          </Link>
+                        </div>
                       ))}
                     </div>
                   ) : (
