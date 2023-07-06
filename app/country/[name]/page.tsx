@@ -177,7 +177,9 @@ const Page = ({ params: { name } }: Params) => {
                       } mt-8`}>
                       {country.borders!.map((countries) => (
                         <Link href={`/country/${countries}`}>
-                          <BordersBox name={countries} />
+                          <div key={countries}>
+                            <BordersBox name={countries} />
+                          </div>
                         </Link>
                       ))}
                     </div>
